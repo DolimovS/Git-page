@@ -78,16 +78,29 @@ box_left_content.addEventListener("mouseenter",()=>{
 })
 
 //nav imput
+const nav_searchs=document.querySelector(".nav_searchs")
 const nav_search=document.querySelector(".nav_search")
 const nav_buttom=document.querySelector(".nav_buttom")
 const nav_search_fa_xmark =document.querySelector("#nav_search_fa_xmark")
 
+nav_searchs.addEventListener("click",(item)=>{
+    console.log(item.target.classList[0]);
+    let qiymat=item.target.classList[0]
+    if(qiymat=="nav_searchs"){
+    nav_searchs.classList.remove("hiddenadd")   
+    }
+})
+
 nav_search_fa_xmark.addEventListener("click",()=>{
     console.log("dfdgdfdsfdgv");
     
-    nav_search.classList.remove("hiddenadd")
+    nav_searchs.classList.remove("hiddenadd")
 })
 nav_buttom.addEventListener("click",()=>{
     console.log("dfdgdfdsfdgv");
-    nav_search.classList.add("hiddenadd")
+    nav_searchs.classList.add("hiddenadd")
 })
+
+
+// nav search
+

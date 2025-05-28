@@ -1035,9 +1035,19 @@ box_left .owerview_achievement .img {
   opacity: 1;
 }
 /* nav_search */
-
-.nav_search {
+.nav_searchs{
+  width: 100%;
+  min-height: 100vh;
   position: absolute;
+    top: 0px;
+  left: 0;
+  display: none;
+
+
+}
+.nav_search {
+position: relative;
+  /* position: absolute; */
   top: 5px;
   left: 4%;
   width: 80%;
@@ -1046,7 +1056,6 @@ box_left .owerview_achievement .img {
   padding: 10px;
   background-color: #0d1117;
   z-index: 1000;
-  display: none;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
