@@ -307,13 +307,11 @@ ol {
     position: absolute;
     top: 0;
     right: 0;
-    /* border: 2px solid red; */
     width: 100%;
     height: 100vh;
     display: flex;
-    /* justify-content: end; */
-    /* text-align: end; */
     display: none;
+    z-index: 999;
 }
 
 .profil_active {
@@ -1418,6 +1416,7 @@ i {
     .overview_left{
         width: 100%;
         position: relative;
+        z-index: 0;
     }
     .owerview_button{
         /* position: absolute;
