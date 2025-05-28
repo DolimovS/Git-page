@@ -894,7 +894,6 @@ box_left .owerview_achievement .img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* border: 2px solid red; */
 }
 
 /* overview_right_static */
